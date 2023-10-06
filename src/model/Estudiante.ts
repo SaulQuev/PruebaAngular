@@ -9,4 +9,7 @@ export class Estudiante{
     getNombre(){
     return this._nombre;    
     }
+    getEdad(){
+        return this._edad;    
+        }
 } 

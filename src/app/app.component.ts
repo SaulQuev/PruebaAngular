@@ -17,7 +17,10 @@ export class AppComponent {
   constructor() {
     //setInterval(() => this.title = "Nuevo valor", 3000);
     this.estudianteObj = new Estudiante('PEPE',23);
-    this.listaEstudiantes.push(new Estudiante('PEPE',23));
+    this.listaEstudiantes.push(new Estudiante('PEPE1',32));
+    this.listaEstudiantes.push(new Estudiante('JUAN',27));
+    this.listaEstudiantes.push(new Estudiante('SAUL',23));
+    this.listaEstudiantes.push(new Estudiante('TOÑO',29));
   }
   getSuma(numero1: number, numero2: number) {
     return numero1 + numero2;
