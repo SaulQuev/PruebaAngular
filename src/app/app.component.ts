@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Estudiante } from 'src/model/Estudiante';
+import { ItemMenu, env } from './config/env';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,7 @@ import { Estudiante } from 'src/model/Estudiante';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  listaMenu:Array<ItemMenu> = env.menu;
   title = 'Valor 1';
   textoPlaceholder = "Escribe algo aqui";
   imgSrc = "https://angular.io/assets/images/logos/angular/angular.png";
@@ -15,12 +17,15 @@ export class AppComponent {
   listaEstudiantes:Estudiante[]=[] ;
 
   constructor() {
+
     //setInterval(() => this.title = "Nuevo valor", 3000);
+    /*
     this.estudianteObj = new Estudiante('PEPE',23);
     this.listaEstudiantes.push(new Estudiante('PEPE1',32));
     this.listaEstudiantes.push(new Estudiante('JUAN',27));
     this.listaEstudiantes.push(new Estudiante('SAUL',23));
     this.listaEstudiantes.push(new Estudiante('TOÑO',29));
+    */
   }
   getSuma(numero1: number, numero2: number) {
     return numero1 + numero2;
